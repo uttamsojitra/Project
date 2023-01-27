@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard-style.css">
+</head>
+<body>
+    <div class="dashboard-main">
+    <div>
+        <header class="dashboard-header">
+            <img src="images/menu-bar.svg" alt="menu-bar" id="menu-bar">
+
+            <img src="images/logo.svg" alt="logo" id="dashboard-logo">
+
+            <img src="images/search-icon.svg" alt="search" id="search-icon">
+
+            <b id="search">Search</b>
+
+            <img src="images/notification-icon.svg" alt="notification-icon" id="notification-icon">
+
+            <img src="images/profile.png" alt="profile-photo" id="profile">
+
+            <b id="profile-name">John Doe</b>
+
+            <img src="images/downward-arrow.svg" alt="down-arrow" id="down-arrow" width="15px" height="15px">
+          </header>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar"> 
+        
+      <a href="#element1">  
+      <img src="images\dashboard-default.svg" alt="non" style="top: 119px;
+      left: 48px;
+      width: 15px;
+      height: 15px;"> Deshboard</a>
+
+    <a href="#element2"> <img src="images\graph-default.svg" alt="non" style="top: 119px;
+      left: 48px;
+      width: 15px;
+      height: 15px;"> Analysis</a>
+   
+    <a href="#element3"> <img src="images\inbox-default.svg" alt="non" style="top: 171px;
+      left: 46px;
+      width: 19px;
+      height: 18px;"> Inbox</a>
+
+   <a href="#element4">
+      <img src="images\graph-default.svg" alt="non" style="top: 119px;
+      left: 48px;
+      width: 15px;
+      height: 15px;"> History</a>
+   <a href="#element5"><img src="images\user-default.svg" alt="non" style="top:339px;
+      left: 49px;
+      width: 15px;
+      height: 15px;"> Users</a>
+
+   <a href="#element6"> <img src="images\maintenance-default.svg" alt="non" style="top: 119px;
+      left: 48px;
+      width: 15px;
+      height: 15px;"> Maintainance</a>
+
+   <a href="#element7"> <img src="images\setting-default.svg" alt="non" style="top: 436px;
+      left: 47px;
+      width: 17px;
+      height: 17px;"> Setting</a>
+</div> 
+
+    <main>
+        <div class="dash">Dashboard</div>
+        <div class="insights">
+            <div class="new-product">
+                <div class="left">
+                    <img src="images/star.svg" alt="" class="insight-img">
+                </div>
+                <div class="right">
+                    <p id="data"> 23,456</p>
+                    <p id="data-text">New Product</p>
+                </div>
+            </div>
+
+            <div class="added-product">
+                <div class="left">
+                    <img src="images/new-product.svg" alt="" class="insight-img">
+                </div>
+                <div class="right">
+                    <p id="data"> 2,345</p>
+                    <p id="data-text">Added Product</p>
+                </div>
+            </div>
+
+            <div class="total-product">
+                <div class="left">
+                    <img src="images/total-product.svg" alt="" class="insight-img">
+                </div>
+                <div class="right">
+                    <p id="data"> 32,456</p>
+                    <p id="data-text">Total Product</p>
+                </div>
+            </div>
+
+            <div class="todays-sale">
+                <div class="left">
+                    <img src="images/dollar-filled.svg" alt="" class="insight-img">
+                </div>
+                <div class="right">
+                    <p id="data"> 5,678</p>
+                    <p id="data-text">Today's Sale</p>
+                </div>
+            </div>
+
+            <div class="total-sale">
+                <div class="left">
+                    <img src="images/money-bag.svg" alt="" class="insight-img">
+                </div>
+                <div class="right">
+                    <p id="data"> 33,5342</p>
+                    <p id="data-text">Total Sale</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sales">
+            <div class="top">
+                <span class="sales-title">Sales</span>
+                <span class="sales-time">Weekly &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Monthly</span>
+                <span class="sales-year">Yearly </span>   
+            </div>
+            <div class="bottom">
+                <img src="images/data-graph.png" alt="">
+            </div>
+        </div>
+
+        <div class="sales-by-country">
+            <div class="sales-top">
+                <span class="sales-title">Sales by Country</span>
+
+            </div>
+            <div class="sales-bottom">
+                <img src="images/pie-chart.svg" alt="">
+            </div>
+        </div>
+
+
+        <div class="invoices">
+            <div class="invoices-top">
+                <span class="sales-title">Invoices</span>
+                <span class="sales-year">View all</span>
+            </div>
+            
+            <div class="invoices-bottom">
+                <table class="invoice-table">
+                    <tr>
+                        <th>INVOICE</th>
+                        <th>COMPANY NAME</th>
+                        <th>EMAIL</th>
+                        <th>DUE DATE</th>
+                        <th>STATUS</th>
+                        <th>AMOUNT</th>
+                    </tr>
+
+                    <tr>
+                        <td>651535</td>
+                        <td>Public Adjusting Film</td>
+                        <td>georgia@young.example</td>
+                        <td>24 May,2020</td>
+                        <td class="status-sucess"> <span>Paid</span></td>
+                        <td>$47,800</td>
+                    </tr>
+
+                    <tr>
+                        <td>558612</td>
+                        <td>Other</td>
+                        <td>georgia@young.example</td>
+                        <td>04 March,2020</td>
+                        <td class="status-sucess"> <span>Paid</span></td>
+                        <td>$34,560</td>
+                    </tr>
+
+                    <tr>
+                        <td>558612</td>
+                        <td>Vendor</td>
+                        <td>georgia@young.example</td>
+                        <td>23 June,2020</td>
+                        <td class="status-sucess"> <span>Paid</span></td>
+                        <td>$43,820</td>
+                    </tr>
+
+                    <tr>
+                        <td>651535</td>
+                        <td>Property Management</td>
+                        <td>georgia@young.example</td>
+                        <td>14 July,2020</td>
+                        <td class="status-sucess"> <span>Paid</span></td>
+                        <td>$16,880</td>
+                    </tr>
+
+                    <tr>
+                        <td>651528</td>
+                        <td>Subcontractor</td>
+                        <td>georgia@young.example</td>
+                        <td>21 August,2020</td>
+                        <td class="status-fail"> <span>Failed</span></td>
+                        <td>$23,564</td>
+                    </tr>
+
+                    <tr>
+                        <td>651535</td>
+                        <td>Mortgage Company</td>
+                        <td>georgia@young.example</td>
+                        <td>13 April,2020</td>
+                        <td class="status-pending"> <span>Pending</span></td>
+                        <td>$27,523</td>
+                    </tr>
+
+                    <tr>
+                        <td>483518</td>
+                        <td>TPA</td>
+                        <td>georgia@young.example</td>
+                        <td>29 May,2020</td>
+                        <td class="status-sucess"> <span>Paid</span></td>
+                        <td>$57,856</td>
+                    </tr>
+
+                    <tr>
+                        <td>267400</td>
+                        <td>Fire Department</td>
+                        <td>georgia@young.example</td>
+                        <td>06 June,2020</td>
+                        <td class="status-sucess"> <span>Paid</span></td>
+                        <td>$25,850</td>
+                    </tr>
+
+                    <tr>
+                        <td>449003</td>
+                        <td>Insurance</td>
+                        <td>georgia@young.example</td>
+                        <td>25 September,2020</td>
+                        <td class="status-fail"> <span>Failed</span></td>
+                        <td>$17,800</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    </div>  
+</body>
+</html>
