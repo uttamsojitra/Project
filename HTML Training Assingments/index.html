@@ -1,47 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="CSS\style.css" type="text/css">
-</head>
-<body>
-   <div style="display: flex;">
-        <div class="img1">
-            <img class="image" src="images\hero-image.png" alt="non" width="576" height="576">
-        </div>
-    
-    </div>
-    <div class="img2">
-        
-            <img src="images\header-logo.svg" alt="non" width="272" height="58">
-       
-     
-    </div>
+    <html>
+    <head>
+       <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href='css\style.css'>
+        <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+        <link rel="stylesheet" type="text/js" href="js/bootstrap.bundle.min.js">
+        <link rel=”stylesheet” href=”css/bootstrap.css”>
+        <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
 
-    <div class="p1">
-        We are <span class="p2">experts</span> in business, marketing, growth, & sales.
-        
-    </div>
-      
-    <div class="p3">Log in into your account</div>
-        
-        
-        <div>   
-            
-            <input type="text" class="form1" name="username" placeholder="Username"><br>
-            
-        </div>
-        <div >
-          <input type="text" class="form2" name="password" placeholder="Password"><br>
-        </div>
+    <body class="body">
 
-        <input class="button" type="button" name="button" value="Login"/>
-       
-       <div class="forgot">Forgot Password</div>
-       <div class="new">Are you a new Member?</div>
-       <span class="register">Register here</span>
-</body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md">
+                        <img src="images/hero-image.png" class="rounded-circle" name="images/hero-image.png">
+            </div>
+            <div class="col-md">   
+                       <img class="header-logo" src="images/header-logo.svg">
+                        
+                        <p class="headtext">
+                            We are <span>expert</span> in business,<br>marketing, Growth, &sales.
+                        </p>
+
+                    <div>
+                        <p class="col-md login-text"> Login into your account</p>
+                    </div>
+
+                    <div>
+                        <input class="username" type="text" placeholder="Username">
+                    </div>
+
+                    <div>
+                        <input class="userpass" type="password" placeholder="Password">
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                        <button class="login-btn">Login</button>
+                        </div>
+
+                        <div class="col">
+                        <a class="link-pass" login href="dashboard.html">Forgot Password</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        Are you a new Member?
+                        <a class="link-register" href="">Register here</a>
+                    </div>
+             </div>
+        </div>
+    </div>
+    </body>
 </html>

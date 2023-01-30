@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/dashboard-style.css">
+</head>
+<body>
+    
+        <div class="dashboard-main">
+            <div>
+                <header class="dashboard-header">
+                    <img src="images/menu-bar.svg" alt="menu-bar" id="menu-bar">
+        
+                    <img src="images/logo.svg" alt="logo" id="dashboard-logo">
+        
+                    <img src="images/search-icon.svg" alt="search" id="search-icon">
+        
+                    <b id="search">Search</b>
+        
+                    <img src="images/notification-icon.svg" alt="notification-icon" id="notification-icon">
+        
+                    <img src="images/profile.png" alt="profile-photo" id="profile">
+        
+                    <b id="profile-name">John Doe</b>
+        
+                    <img src="images/downward-arrow.svg" alt="down-arrow" id="down-arrow" width="15px" height="15px">
+                  </header>
+            </div>
+        
+            <!-- SIDEBAR -->
+          <div class="sidebar"> 
+                
+              <a href="#element1">  
+              <img src="images\dashboard-default.svg" alt="non" style="top: 119px;
+              left: 48px;
+              width: 15px;
+              height: 15px;"> Deshboard</a>
+        
+            <a href="#element2"> <img src="images\graph-default.svg" alt="non" style="top: 119px;
+              left: 48px;
+              width: 15px;
+              height: 15px;"> Analysis</a>
+           
+            <a href="#element3"> <img src="images\inbox-default.svg" alt="non" style="top: 171px;
+              left: 46px;
+              width: 19px;
+              height: 18px;"> Inbox</a>
+        
+           <a href="#element4">
+              <img src="images\graph-default.svg" alt="non" style="top: 119px;
+              left: 48px;
+              width: 15px;
+              height: 15px;"> History</a>
+           <a href="#element5"><img src="images\user-default.svg" alt="non" style="top:339px;
+              left: 49px;
+              width: 15px;
+              height: 15px;"> Users</a>
+        
+           <a href="#element6"> <img src="images\maintenance-default.svg" alt="non" style="top: 119px;
+              left: 48px;
+              width: 15px;
+              height: 15px;"> Maintainance</a>
+        
+           <a href="#element7"> <img src="images\setting-default.svg" alt="non" style="top: 436px;
+              left: 47px;
+              width: 17px;
+              height: 17px;"> Setting</a>
+          </div> 
+        
+    <div class="analysis" >Analysis</div>
+    <div class="onecolumn" style=" top: 205px ;left: 321px;">One Column</div>
+    
+    <form >
+        <input type="text" id="in1"  placeholder="Name">
+        
+       
+        <select  id="in2" placeholder="Dropdown">
+            <option value="volvo">Dropdown</option>
+            <!-- <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option> -->
+          </select>
+          <textarea id="in3" name="w3review" rows="4" cols="50" placeholder="mulitiple line"></textarea>
+    </form>
+     
+    <!-------   Two column  ------->
+
+    <div class="onecolumn" style=" top: 562px ;left: 321px;">Two Column</div>
+     
+    <div style="display: flex;">
+       
+      <input type="text" id="in4"  placeholder="Name">
+        <fieldset id="in5">
+        <legend>Username</legend>
+        <label>John doe</label>
+        
+        </fieldset>
+      <input type="text" id="in6"  placeholder="Password">
+        <select  id="in7" placeholder="Dropdown">
+        <option value="volvo">Dropdown</option>
+        <option value="one">One</option>
+        <option value="Two">Two</option>
+        <option value="Three">Three</option>
+       </select>
+    </div>
+
+    <!-- Three column -->
+    <div class="onecolumn" style=" top: 769px ;left: 321px;">Three Column</div>
+     
+  
+        <fieldset id="focus">
+            <legend>Focus</legend>
+        </fieldset>
+        
+        <fieldset id="password">
+          <legend>Password</legend>
+         </fieldset>
+
+      <fieldset id="disabled">
+        <legend>disabled</legend>
+        <label>John doe</label>
+       </fieldset>
+
+      
+         
+<!--  Four column -->
+    <div class="onecolumn" style="top: 910px;left: 321px;">Four Column</div>
+    
+    
+    <fieldset class="fieldset5">
+        <legend>Designation</legend>
+     </fieldset>
+     <input type="text" class="name2" placeholder="Name">
+     <fieldset class="fieldset6">
+        <legend>Username</legend>
+     </fieldset>
+     <select name="dropdown" class="dropdown3">
+        <option>Dropdown</option>
+    </select>
+    <p class="valid">Enter Valid Data</p>
+    <p class="fullname">Enter Your Full Name As Per ID</p>
+  
+    <!-- Other Design element -->
+    <div class="onecolumn" style="top: 1075px;left: 321px;width: 225px;">Other Design Elements</div>
+    
+     <div class="upload">File Upload</div>
+
+      <div >
+        <input type="button" value="Upload" class="button">
+        <p class="buttontext">No item Selected</p>
+     </div>
+
+     <div class="upload" style="top: 1237px;left: 321px;">Radio Button</div>
+
+  
+     <div class="radioo">
+      <input type="radio" class="radio1" name="Radio1" value = "Radio1">
+      <label for="Radio1">Option 1</label>
+      <input type="radio" class="radio2" name="Radio2" value = "Radio2" checked>
+      <label for="Radio2" >Option 2</label>
+  </div>
+ 
+  <div class="upload" style="top: 1325px;left: 321px;">Check Box</div>
+  <div class="checkboxx">
+      <input type="checkbox" name="option1" id="option11">
+      <label for="option11"> Option 1</label>
+      <input type="checkbox" name="option2" id="option22" checked>
+      <label for="option22"> Option 2</label>
+  </div>
+</div>
+
+
+   <div class="upload" style="top: 1416px;left: 321px;">Snake Bar</div>
+<div class="snackbar1">
+    <input type="text" style="border: solid red; " name="placeholder" placeholder="This is an error message" class="snackbar11">
+    <input type="text" style="border:solid aqua;" class="snackbar12" name="palceholder" placeholder="this is an information message">
+</div>
+<div class="snackbar2">
+    <input type="text" style="border: solid yellow; " name="placeholder" placeholder="This is a warning message" class="snackbar21">
+    <input type="text" style="border:solid green;" class="snackbar22" name="palceholder" placeholder="this is Success message">
+</div>
+
+<!-- CAll to action -->
+<div class="upload" style="top: 1580px;left: 321px;">Call to action</div>
+<div class="call">
+  <button class="button11">Primary</button>
+  <button class="button12">Secondary</button>
+</div>
+
+
+<div class="upload" style="top: 1680px;left: 321px;">Tab</div>
+
+<div class="tab1"><p>Tab1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab3</p></div>
+  
+
+
+
+<hr class="horizontalline">
+</div>
+
+<p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, accusantium. Reiciendis placeat reprehenderit quibusdam sint cupiditate? Temporibus, fugit quaerat distinctio sint repellat nam rerum officia sunt recusandae provident harum maxime incidunt quia perspiciatis explicabo omnis veritatis, numquam necessitatibus delectus tempora? Non accusamus dolores praesentium voluptas neque earum suscipit perferendis, ea, odio, soluta itaque velit in tenetur! Quas quis sapiente inventore hic non? Nesciunt, culpa. Impedit corporis fugiat doloremque nostrum libero!</p>
+
+
+</div>
+</body>
+</html>
