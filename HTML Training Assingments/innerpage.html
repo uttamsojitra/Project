@@ -6,204 +6,326 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="css/dashboard-style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body>
-    
-        <div class="dashboard-main">
-            <div>
-                <header class="dashboard-header">
-                    <img src="images/menu-bar.svg" alt="menu-bar" id="menu-bar">
-        
-                    <img src="images/logo.svg" alt="logo" id="dashboard-logo">
-        
-                    <img src="images/search-icon.svg" alt="search" id="search-icon">
-        
-                    <b id="search">Search</b>
-        
-                    <img src="images/notification-icon.svg" alt="notification-icon" id="notification-icon">
-        
-                    <img src="images/profile.png" alt="profile-photo" id="profile">
-        
-                    <b id="profile-name">John Doe</b>
-        
-                    <img src="images/downward-arrow.svg" alt="down-arrow" id="down-arrow" width="15px" height="15px">
-                  </header>
+<body style="background-color: #fafafa;">
+<!------ header --------->
+<nav class="navbar navbar-expand-lg " style="background-color: white;">
+<div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+    </button>
+
+
+    <img src="./images/header-logo.svg">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <form class="d-flex ms-3" role="search">
+                <i class="bi bi-search my-auto"></i>
+                <input class="form-control me-2 ms-3 border-0 " style="width: 60vw; background-color: white;"
+                    type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </ul>
+        <div class="d-flex">
+            <i class="bi bi-bell my-auto"></i>
+            <img src="./images/profile.png" class="ms-3">
+
+
+            <div class="dropdown-center my-auto">
+                <a class="nav-link dropdown-toggle  ms-3 me-5" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    John Doe
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <li><a class="dropdown-item" href="#">person 1</a></li>
+                    <li><a class="dropdown-item" href="#">person 2 </a></li>
+                    <li><a class="dropdown-item" href="#">person 3 </a></li>
+                </ul>
             </div>
-        
-            <!-- SIDEBAR -->
-          <div class="sidebar"> 
-                
-              <a href="#element1">  
-              <img src="images\dashboard-default.svg" alt="non" style="top: 119px;
-              left: 48px;
-              width: 15px;
-              height: 15px;"> Deshboard</a>
-        
-            <a href="#element2"> <img src="images\graph-default.svg" alt="non" style="top: 119px;
-              left: 48px;
-              width: 15px;
-              height: 15px;"> Analysis</a>
-           
-            <a href="#element3"> <img src="images\inbox-default.svg" alt="non" style="top: 171px;
-              left: 46px;
-              width: 19px;
-              height: 18px;"> Inbox</a>
-        
-           <a href="#element4">
-              <img src="images\graph-default.svg" alt="non" style="top: 119px;
-              left: 48px;
-              width: 15px;
-              height: 15px;"> History</a>
-           <a href="#element5"><img src="images\user-default.svg" alt="non" style="top:339px;
-              left: 49px;
-              width: 15px;
-              height: 15px;"> Users</a>
-        
-           <a href="#element6"> <img src="images\maintenance-default.svg" alt="non" style="top: 119px;
-              left: 48px;
-              width: 15px;
-              height: 15px;"> Maintainance</a>
-        
-           <a href="#element7"> <img src="images\setting-default.svg" alt="non" style="top: 436px;
-              left: 47px;
-              width: 17px;
-              height: 17px;"> Setting</a>
-          </div> 
-        
-    <div class="analysis" >Analysis</div>
-    <div class="onecolumn" style=" top: 205px ;left: 321px;">One Column</div>
-    
-    <form >
-        <input type="text" id="in1"  placeholder="Name">
-        
-       
-        <select  id="in2" placeholder="Dropdown">
-            <option value="volvo">Dropdown</option>
-            <!-- <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option> -->
-          </select>
-          <textarea id="in3" name="w3review" rows="4" cols="50" placeholder="mulitiple line"></textarea>
-    </form>
-     
-    <!-------   Two column  ------->
 
-    <div class="onecolumn" style=" top: 562px ;left: 321px;">Two Column</div>
-     
-    <div style="display: flex;">
-       
-      <input type="text" id="in4"  placeholder="Name">
-        <fieldset id="in5">
-        <legend>Username</legend>
-        <label>John doe</label>
-        
-        </fieldset>
-      <input type="text" id="in6"  placeholder="Password">
-        <select  id="in7" placeholder="Dropdown">
-        <option value="volvo">Dropdown</option>
-        <option value="one">One</option>
-        <option value="Two">Two</option>
-        <option value="Three">Three</option>
-       </select>
+        </div>
     </div>
+</div>
+</nav>
 
-    <!-- Three column -->
-    <div class="onecolumn" style=" top: 769px ;left: 321px;">Three Column</div>
-     
-  
-        <fieldset id="focus">
-            <legend>Focus</legend>
-        </fieldset>
+<!------ SIDE BAR --------->
+<div class="row container-fluid">
+<div id="sidebarMenu" class="col-lg-2 d-lg-block d-xl-block d-xxl-block ">
+    <nav class=" d-lg-block bg-white my-auto">
+        <div class="position-sticky">
+            <div class="sidebar"> 
+
+                <a href="deshboard.html">  
+                   <img src="images\dashboard-default.svg" alt="non" style="top: 119px;
+                   left: 48px;
+                   width: 15px;
+                   height: 15px;"> Dashboard</a>
+             
+                <a href="innerpage.html"> <img src="images\graph-default.svg" alt="non" style="top: 119px;
+                   left: 48px;
+                   width: 15px;
+                   height: 15px;"> Analysis</a>
+                
+                <a href="#element3"> <img src="images\inbox-default.svg" alt="non" style="top: 171px;
+                   left: 46px;
+                   width: 19px;
+                   height: 18px;"> Inbox</a>
+             
+                <a href="#element4">
+                   <img src="images\graph-default.svg" alt="non" style="top: 119px;
+                   left: 48px;
+                   width: 15px;
+                   height: 15px;"> History</a>
+                <a href="#element5"><img src="images\user-default.svg" alt="non" style="top:339px;
+                   left: 49px;
+                   width: 15px;
+                   height: 15px;"> Users</a>
+             
+                <a href="#element6"> <img src="images\maintenance-default.svg" alt="non" style="top: 119px;
+                   left: 48px;
+                   width: 15px;
+                   height: 15px;"> Maintainance</a>
+                <a href="#element7"> <img src="images\setting-default.svg" alt="non" style="top: 436px;
+                   left: 47px;
+                   width: 17px;
+                   height: 17px;"> Setting</a>
+               </div>
+        </div>
+    </nav>
+</div>
+<!-------   ANALYSIS -------->
+
+    <div class="col-lg-10">
+    <h2 class="my-4 ms-3"><b>Analysis</b></h2>
         
-        <fieldset id="password">
-          <legend>Password</legend>
-         </fieldset>
+    <div class="container" style="background-color:white;">
+    <div class="col">
+        
+        <div class="my-2 mx-2"><h4><b>One Column</b></h4></div> 
+        <div class="row-cols-auto"><input type="text" class="form-control" placeholder="name" aria-label="name" aria-describedby="button-addon2"></div>
+        <div class="row-cols-auto"> 
+            <div class="form-group">
+            <select class="form-control my-2" id="sel1" aria-placeholder="dropdown">
+              <option>Dropdown</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            </div>
+         </div>
+        <div class="row-cols-auto">
+            <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Multiple line</label>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="my-2"><h4><b>Two Column</b></h4></div>   
+        
+        <div class="col-lg-6 col-md-4 col-sm-12 col-12">
+            <div class="row-cols-auto mt-2"><input type="text" class="form-control" placeholder="name" aria-label="name" aria-describedby="button-addon2"></div>
+        </div>
+    
+        <div class="col-lg-6 col-md-4 col-sm-12 col-12">
+            <div class="row-cols-auto mt-2"><input type="text" class="form-control" placeholder="John doe" aria-label="name" aria-describedby="button-addon2">
+        </div>
+        
+      </div>
+    </div>
+      <div class="row"> 
+        <div class="col-lg-6 col-md-4  col-sm-12 col-12">
+            <div class="row-cols-auto my-2"><input type="text" class="form-control" placeholder="password" aria-label="password" aria-describedby="button-addon2"></div>
+        </div>
+    
+        <div class="col-lg-6 col-md-4 col-sm-12 col-12">
+            <div class="row-cols-auto"> 
+                <div class="form-group">
+                <select class="form-control my-2" id="sel1" aria-placeholder="dropdown">
+                  <option>Dropdown</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <div class="container">
+        <div class="my-2"><h4><b>Three Column</b></h4></div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row-cols-auto my-2 "><input type="text" class="form-control border-danger" placeholder="|" aria-label="password" aria-describedby="button-addon2"></div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="row-cols-auto my-2 "><input type="text" class="form-control" placeholder="Password" aria-label="password" aria-describedby="button-addon2"></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row-cols-auto my-2 "><input type="text" class="form-control" placeholder="Disabled user" aria-label="password" aria-describedby="button-addon2" style="border:1px dashed #ADADAD; "></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="my-2"><h4><b>Four Column</b></h4></div>
+            <div class="col-lg-3">
+                <div class=" my-2 "><input type="text" class="form-control border-danger" placeholder="UI Designer" aria-label="password" aria-describedby="button-addon2"></div>
+                <div class="my-2 fs-6">Enter valid data</div>
+            </div>
+            
+            <div class="col-lg-3">
+                <div class=" my-2 "><input type="text" class="form-control" placeholder="name" aria-label="password" aria-describedby="button-addon2"></div>
+                <div class="my-2 fs-6 ">Enter your full name as per ID </div>
+            </div>
+            <div class="col-lg-3">
+                <div class=" my-2 "><input type="text" class="form-control" placeholder="jhon doe" aria-label="password" aria-describedby="button-addon2" style="border:1px dashed #ADADAD; ">
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                <select class="form-control my-2" id="sel1" aria-placeholder="dropdown">
+                  <option>Select</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  -->
+    <div class="col" >
+        <div class="my-2"><h4><b>Other Design Elements</b></h4></div>
+          <div class="my-4"><h5><b>File Upload</b></h5></div>
+          <div class="row">
+          <button type="button" class="btn btn-light my-2 col-lg-1  mx-3" style="border: 1px solid red
+        ; border-radius:20px;">Upload</button>
+        <div class="col-lg-3 my-2"><h5><b>File Upload</b></h5>
+        </div> 
+        </div> 
+       
+        <div class="row">
+          <div class="my-2"><h5><b>Radio Button</b></h5>
+          </div>
 
-      <fieldset id="disabled">
-        <legend>disabled</legend>
-        <label>John doe</label>
-       </fieldset>
+        <div class="input-group">
+          
+            <div class="input-group-text col-lg-1">
+            <input type="radio" aria-label="Radio button for following text input" placeholder="Option 2" class="mx-1 border-opacity-0 ">Option 1</input>
+            </div>
+            <div class="input-group-text col-lg-1 mx-2">
+              <input type="radio" aria-label="Radio button for following text input" placeholder="Option 2" class="mx-1 border-opacity-0">Option 2</input>
+              </div>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="my-2"><h5><b>Checkbox</b></h5>
+        </div>
 
-      
+        <div class="input-group mb-3">
+          
+            <div class="input-group-text col-lg-1 ">
+              <input type="checkbox" aria-label="Checkbox for following text input" class="mx-1 border-opacity-0 ">Option 2</input>
+            </div>
+            <div class="input-group-text col-lg-1 mx-2 ">
+              <input type="checkbox" aria-label="Checkbox for following text input" class="mx-1 border-opacity-0">Option 2</input>
+            </div>
+          
          
-<!--  Four column -->
-    <div class="onecolumn" style="top: 910px;left: 321px;">Four Column</div>
-    
-    
-    <fieldset class="fieldset5">
-        <legend>Designation</legend>
-     </fieldset>
-     <input type="text" class="name2" placeholder="Name">
-     <fieldset class="fieldset6">
-        <legend>Username</legend>
-     </fieldset>
-     <select name="dropdown" class="dropdown3">
-        <option>Dropdown</option>
-    </select>
-    <p class="valid">Enter Valid Data</p>
-    <p class="fullname">Enter Your Full Name As Per ID</p>
-  
-    <!-- Other Design element -->
-    <div class="onecolumn" style="top: 1075px;left: 321px;width: 225px;">Other Design Elements</div>
-    
-     <div class="upload">File Upload</div>
-
-      <div >
-        <input type="button" value="Upload" class="button">
-        <p class="buttontext">No item Selected</p>
-     </div>
-
-     <div class="upload" style="top: 1237px;left: 321px;">Radio Button</div>
-
-  
-     <div class="radioo">
-      <input type="radio" class="radio1" name="Radio1" value = "Radio1">
-      <label for="Radio1">Option 1</label>
-      <input type="radio" class="radio2" name="Radio2" value = "Radio2" checked>
-      <label for="Radio2" >Option 2</label>
-  </div>
- 
-  <div class="upload" style="top: 1325px;left: 321px;">Check Box</div>
-  <div class="checkboxx">
-      <input type="checkbox" name="option1" id="option11">
-      <label for="option11"> Option 1</label>
-      <input type="checkbox" name="option2" id="option22" checked>
-      <label for="option22"> Option 2</label>
-  </div>
-</div>
-
-
-   <div class="upload" style="top: 1416px;left: 321px;">Snake Bar</div>
-<div class="snackbar1">
-    <input type="text" style="border: solid red; " name="placeholder" placeholder="This is an error message" class="snackbar11">
-    <input type="text" style="border:solid aqua;" class="snackbar12" name="palceholder" placeholder="this is an information message">
-</div>
-<div class="snackbar2">
-    <input type="text" style="border: solid yellow; " name="placeholder" placeholder="This is a warning message" class="snackbar21">
-    <input type="text" style="border:solid green;" class="snackbar22" name="palceholder" placeholder="this is Success message">
-</div>
-
-<!-- CAll to action -->
-<div class="upload" style="top: 1580px;left: 321px;">Call to action</div>
-<div class="call">
-  <button class="button11">Primary</button>
-  <button class="button12">Secondary</button>
-</div>
-
-
-<div class="upload" style="top: 1680px;left: 321px;">Tab</div>
-
-<div class="tab1"><p>Tab1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab3</p></div>
-  
-
-
-
-<hr class="horizontalline">
-</div>
-
-<p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, accusantium. Reiciendis placeat reprehenderit quibusdam sint cupiditate? Temporibus, fugit quaerat distinctio sint repellat nam rerum officia sunt recusandae provident harum maxime incidunt quia perspiciatis explicabo omnis veritatis, numquam necessitatibus delectus tempora? Non accusamus dolores praesentium voluptas neque earum suscipit perferendis, ea, odio, soluta itaque velit in tenetur! Quas quis sapiente inventore hic non? Nesciunt, culpa. Impedit corporis fugiat doloremque nostrum libero!</p>
-
-
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="my-2"><h5><b>Snack Bar</b></h5></div>   
+          <div class="col-lg-6 col-md-4 col-sm-12 col-12 ">
+              <div class="row-cols-auto border border-danger mt-2"><input type="text" class="form-control" placeholder="This is an error message" aria-label="name" aria-describedby="button-addon2"></div>
+          </div>
+      
+          <div class="col-lg-6 col-md-4 col-sm-12 col-12">
+              <div class="row-cols-auto border border-primary mt-2"><input type="text" class="form-control" placeholder="This is an information message"  aria-label="name" aria-describedby="button-addon2">
+          </div>
+          
+        </div>
+      </div>
+      <div class="row"> 
+          <div class="col-lg-6 col-md-4  col-sm-12 col-12">
+              <div class="row-cols-auto my-2 border border-warning"><input type="text" class="form-control" placeholder="This is an warning message" aria-label="password" aria-describedby="button-addon2"></div>
+          </div>
+      
+          <div class="col-lg-6 col-md-4  col-sm-12 col-12">
+            <div class="row-cols-auto my-2 border border-success"><input type="text" class="form-control" placeholder="This is an success message" aria-label="password" aria-describedby="button-addon2"></div>
+        </div>
+          </div>
+          <div class="row">
+            <div class="my-2"><h5><b>Call to action</b></h></div>
+            <div class="col-lg-1 my-2">
+              <button type="button" class="btn btn-danger" style=" border-radius:20px;">Primary</button> 
+            </div>
+            <div class="col-lg-1 my-2 mx-1">
+              <button type="button" class="btn btn-outline-secondary " style="border: 1px solid red
+              ; border-radius:20px;">Secondary</button>
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="my-2"><h4><b>Tabs</b></h4></div>
+          <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist" >
+                  <button class="t1 btn btn-outline-danger" style="border-color: #fafafa;" id="nav-home-tab" data-bs-toggle="tab"
+                      data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                      aria-selected="true" >Tab 1</button>
+                  <button class="t1 btn btn-outline-danger" style="border-color: #fafafa; " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                      type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tab 2</button>
+                  <button class="t1 btn btn-outline-danger" style="border-color: #fafafa;" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                      type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tab 3</button>
+              </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsum ratione quae! Earum,
+                  atque quidem! Suscipit architecto, itaque, quae quia quaerat eligendi blanditiis sequi tempore
+                  veritatis aliquid id voluptates unde inventore alias dolorum et modi, fuga vitae possimus. Quam
+                  recusandae commodi error corporis voluptatem architecto, a placeat eveniet neque? Sequi!</div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam, voluptatem alias
+                  doloribus ea voluptate libero eos fugit nemo cum quidem dolorum nam eaque reiciendis, cupiditate
+                  pariatur laudantium optio, molestiae reprehenderit hic! Hic, beatae cumque harum excepturi rem,
+                  animi minima eius porro sequi doloremque incidunt distinctio enim ipsam quis in.</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem
+                  ipsum, dolor sit amet consectetur adipisicing elit. Ratione sed animi, necessitatibus quod
+                  temporibus a veniam cumque nulla molestias! Beatae assumenda, non laboriosam consequuntur ullam
+                  aliquid dolor necessitatibus cupiditate ad libero atque deleniti soluta voluptates est similique
+                  nisi quam. Earum nobis reiciendis quisquam perspiciatis aperiam maxime. Eum rem nulla vero!
+              </div>
+            </div> 
+           </div>
+        </div>
+    </div>
+    </div>
+  </div>        
 </div>
 </body>
 </html>
